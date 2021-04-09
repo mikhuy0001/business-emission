@@ -1,0 +1,1 @@
+let{io}=require("./socket");io.use((e,i)=>{e.handshake.headers.host;i()});let{comproveVisualizationCode}=require("../controllers/comproveVisualizationCode");io.use(async(e,i)=>{var{emissionKey:o,key:s,visualizationCode:a}=e.handshake.query;"businessEmission"==o||await comproveVisualizationCode(s,a)?i():(e.disconnect(),i(new Error("invalid")))});

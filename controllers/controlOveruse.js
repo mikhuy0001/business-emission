@@ -1,0 +1,1 @@
+async function controlOveruse(e,o,i,n,r){var s,t=o.map(e=>e.visualizationCode),c=(s=i,t.reduce((e,o)=>o===s?e+1:e,0));2<c?e.disconnect():(o.push({clientID:n,visualizationCode:i}),r[0]++,e.broadcast.emit("viewers",r[0]))}module.exports.controlOveruse=controlOveruse;

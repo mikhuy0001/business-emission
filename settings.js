@@ -1,0 +1,1 @@
+let{express}=require("./app"),{app}=require("./app"),cookieParser=require("cookie-parser");app.use((e,p,r)=>{r()}),app.use(cookieParser()),app.set("views",__dirname+"/public/views"),app.set("view engine","ejs"),app.use(express.static(__dirname+"/public"));

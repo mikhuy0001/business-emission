@@ -1,0 +1,1 @@
+let{comproveSession}=require("../controllers/comproveSession");async function root(o,e){var{userType:r,token:s,sessionID:o}=o.cookies;(await comproveSession(r,s,o)).keySession?e.redirect("emission"):e.render("login",{error:""})}module.exports.root=root;

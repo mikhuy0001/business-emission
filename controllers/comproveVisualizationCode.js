@@ -1,0 +1,1 @@
+const axios=require("axios");async function comproveVisualizationCode(o,a){var{visualizationCodesServices:i}=require("../vars"),i=i+"comproveVisualizationCode";return axios.get(i,{params:{route:o,code:a}}).then(async function(o){return await o.data}).catch(async function(o){return await!1})}exports.comproveVisualizationCode=comproveVisualizationCode;

@@ -1,0 +1,1 @@
+const{Schema,model}=require("mongoose"),{businessCollection}=require("../db/dbVars"),businessSchema=new Schema({routeName:{type:String,unique:!0,required:!0},name:{type:String,required:!0},date:{type:Date,default:new Date,required:!0}},{collection:businessCollection});module.exports=model("Business",businessSchema);

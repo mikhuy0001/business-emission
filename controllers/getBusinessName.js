@@ -1,0 +1,1 @@
+const axios=require("axios");async function getBusinessName(e){var{businessInfoURL:s}=require("../vars"),s=s+"businessName";return axios.get(s,{params:{routeName:e}}).then(async function(e){return await e.data}).catch(async function(e){return await!1})}module.exports.getBusinessName=getBusinessName;

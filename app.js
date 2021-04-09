@@ -1,0 +1,1 @@
+const express=require("express");let app=express();const server=require("http").Server(app);module.exports.express=express,module.exports.app=app,module.exports.server=server,require("./settings"),require("./routes/router"),require("./socket/socket");const port=process.env.PORT||5e3;server.listen(port,function(){}),module.exports.port=port;

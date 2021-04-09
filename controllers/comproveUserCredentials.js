@@ -1,0 +1,1 @@
+async function comproveUserCredentials(e,s,r){let n;if("business"==e)n="BusinessSession";else{if("user"!=e)return!1;n="UserSession"}try{const t=require("../models/"+n);var i=await t.findOne({token:s,_id:r});return i}catch(e){return!1}}exports.comproveUserCredentials=comproveUserCredentials;

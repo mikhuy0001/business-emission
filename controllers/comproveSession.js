@@ -1,0 +1,1 @@
+const axios=require("axios");async function comproveSession(s,e,n){var{businessSessionsURL:o}=require("../vars"),o=o+"comproveSession";return e&&n?axios.get(o,{params:{userType:"business",token:e,sessionID:n}}).then(async function(s){return await s.data}).catch(async function(s){return await!1}):{sign:"parts/goIn"}}exports.comproveSession=comproveSession;

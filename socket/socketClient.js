@@ -1,0 +1,1 @@
+const{controlOveruse}=require("../controllers/controlOveruse");async function socketClient(e,o,t,n,r,c){controlOveruse(e,n,o,r,c)}module.exports.socketClient=socketClient;

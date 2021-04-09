@@ -1,0 +1,1 @@
+const axios=require("axios");async function closeSession(s,e,n){var{businessLogInOut:o}=require("../vars"),o=o+"closeSession";return axios.post(o,{userType:s,token:e,sessionID:n}).then(async function(s){return await s.data}).catch(async function(s){return await s})}module.exports.closeSession=closeSession;

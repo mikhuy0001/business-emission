@@ -1,0 +1,1 @@
+const{Schema,model}=require("mongoose"),{businessSessionCollection}=require("../db/dbVars"),userSessionSchema=new Schema({user_id:{type:String,required:!0},token:{type:String,required:!0},date:{type:Date,default:new Date,required:!0},expire_at:{type:Date,expires:72e3}},{collection:businessSessionCollection});module.exports=model("BusinessSession",userSessionSchema);

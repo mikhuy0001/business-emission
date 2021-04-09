@@ -1,0 +1,1 @@
+async function getBusinessUserDoc(s){try{const e=require("../models/BusinessUser");return await e.findOne({_id:s})}catch(s){return!0}}exports.getBusinessUserDoc=getBusinessUserDoc;
